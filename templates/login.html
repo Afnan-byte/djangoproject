@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static%}
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{%static 'css/login.css' %}">
+
+</head>
+<body>
+<div>
+    <form method="post">
+        {% csrf_token %}
+         <h1>Login</h1><br>
+        <label>Username</label><br>
+        <input type="text" name="name"><br>
+        <label>Password</label><br>
+       <input type="password" name="password"><br><br>
+       <button type="submit">Submit</button><br>
+       <a href="/">Home</a><br>
+       <a href="/signup">Signup</a>
+
+    </form>
+
+</div>
+{{message}}
+
+
+</body>
+</html>

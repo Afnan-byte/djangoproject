@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static%}
+    <meta charset="UTF-8">
+    <title>signup</title>
+      <link rel="stylesheet" href="{%static 'css/signup.css' %}">
+
+
+</head>
+<body>
+<img height="100 " src="{%static 'images/dd.jpg' %}">
+<div>
+    <form method="post">
+        {% csrf_token %}
+        <h1>Signup</h1><br>
+        <label>username</label><br>
+        <input type="text" name="name"><br>
+
+       <label>Password</label><br>
+       <input type="password" name="password1"><br>
+        <label>confirm Password</label><br>
+       <input type="password" name="password2"><br>
+       <button>Submit</button><br>
+       <a href="/">Home</a><br>
+       <a href="/login">login</a><br>
+    </form>
+
+
+
+
+
+
+</div>
+{{alert2}}
+{{alert}}
+
+
+</body>
+</html>

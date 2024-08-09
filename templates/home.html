@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+</head>
+<body>
+<h1>
+hello
+     <a href="/login">login</a><br>
+     <a href="/signup">Signup</a>
+</h1>
+
+<ul>
+
+{% for x in userdata %}
+    <li>{{ x.name }} --> {{x.password}}</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
